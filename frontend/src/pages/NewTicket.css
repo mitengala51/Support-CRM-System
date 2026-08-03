@@ -1,0 +1,92 @@
+.NewTicketPage {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.BackLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.BackLink:hover {
+  color: var(--color-text);
+}
+
+.NewTicketPage h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.TicketForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--color-surface);
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.TicketForm label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-top: 14px;
+}
+
+.TicketForm input,
+.TicketForm textarea {
+  padding: 11px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  transition: border-color 0.15s ease;
+}
+
+.TicketForm input:focus,
+.TicketForm textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.TicketForm button {
+  margin-top: 22px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+.TicketForm button:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.TicketForm button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ErrorText {
+  color: #d64545;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.TicketForm button,
+.AddNote button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

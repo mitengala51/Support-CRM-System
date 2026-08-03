@@ -1,0 +1,72 @@
+:root {
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-border: #e6e8ec;
+  --color-text: #14161a;
+  --color-text-muted: #6b7280;
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-soft: #eef2ff;
+
+  --color-open-bg: #e6f7ee;
+  --color-open-text: #0f8a4c;
+  --color-progress-bg: #fef3e2;
+  --color-progress-text: #b45f06;
+  --color-closed-bg: #eef0f3;
+  --color-closed-text: #5b6270;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+@media (max-width: 640px) {
+  .HomePage,
+  .NewTicketPage,
+  .TicketDetailPage {
+    padding: 24px 16px;
+  }
+
+  .TicketTable th:nth-child(2),
+  .TicketTable td:nth-child(2) {
+    display: none;
+  }
+}
