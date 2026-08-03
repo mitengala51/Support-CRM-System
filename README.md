@@ -81,7 +81,7 @@ cd Support-CRM-System
 cd backend
 cp .env.example .env
 npm install
-npm run dev
+node index.js
 ```
 Runs on `http://localhost:5000`.
 
