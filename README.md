@@ -83,13 +83,9 @@ cp .env.example .env
 npm install
 npm run dev
 ```
-Fill in `.env`:
-```
-PORT=5000
-MONGO_URI=your-mongodb-atlas-connection-string
-CLIENT_URL=http://localhost:5173
-```
 Runs on `http://localhost:5000`.
+
+> **Note:** `.env.example` already contains working values — no need to fill anything in, just copy it to `.env` and you're ready to go.
 
 ### 3. Frontend setup
 ```bash
@@ -97,10 +93,6 @@ cd frontend
 cp .env.example .env
 npm install
 npm run dev
-```
-Fill in `.env`:
-```
-VITE_API_URL=http://localhost:5000
 ```
 Runs on `http://localhost:5173`.
 
